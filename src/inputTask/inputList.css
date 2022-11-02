@@ -2,7 +2,7 @@ input {
   /* min-width: 80%; */
   height: 50px;
   font-size: 40px;
-  background-color: yellow;
+  background-color: #ece5e5;
   margin-top: 10px;
   box-shadow: 0 0 1px 1px rgb(10 40 55 / 8%), 0 4px 6px 1px rgb(10 40 55 / 10%);
 }
