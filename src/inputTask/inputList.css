@@ -1,0 +1,38 @@
+input {
+  /* min-width: 80%; */
+  height: 50px;
+  font-size: 40px;
+  background-color: yellow;
+  margin-top: 10px;
+  box-shadow: 0 0 1px 1px rgb(10 40 55 / 8%), 0 4px 6px 1px rgb(10 40 55 / 10%);
+}
+
+.inputDiv {
+  background-color: antiquewhite;
+  box-shadow: 0 0 1px 1px rgb(10 40 55 / 8%), 0 4px 6px 1px rgb(10 40 55 / 10%);
+  border-radius: 8px;
+}
+
+#submitButton {
+  height: 50px;
+  margin-left: 10px;
+  margin-top: 10px;
+  /* position: relative;
+  top: -10px; */
+  font-size: 30px;
+  background-color: #aee788;
+  box-shadow: 0 0 1px 1px rgb(10 40 55 / 8%), 0 4px 6px 1px rgb(10 40 55 / 10%);
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.inputPosition {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.errorDiv {
+  color: red;
+  font-weight: 700;
+}

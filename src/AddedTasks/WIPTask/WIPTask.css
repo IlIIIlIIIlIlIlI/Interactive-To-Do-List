@@ -1,0 +1,58 @@
+.WIPMainDiv {
+  background-color: #e9dbb6;
+  height: calc(100vh - 136px);
+  /* box-shadow: 0 0 1px 1px rgb(10 40 55 / 8%), 0 4px 6px 1px rgb(10 40 55 / 10%); */
+  border-radius: 8px;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .WIPMainDiv {
+    height: inherit;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .WIPMainDiv {
+    height: inherit;
+  }
+}
+
+.WIPHeadDiv {
+  padding: 10px 10px;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  color: #342f2f;
+}
+
+.WIPEntitee {
+  color: black;
+  font-size: 28px;
+  background-color: #f8f89e;
+  height: 40px;
+  box-shadow: 0 0 1px 1px rgb(10 40 55 / 8%), 0 4px 6px 1px rgb(10 40 55 / 10%);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.WIPWrapper {
+  margin: 5px 10px 10px 10px;
+}
+
+.WIPButton {
+  background-color: #f8f89e;
+  border: 0px solid #f8f89e;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.WIPEntitee:hover {
+  background-color: #f6f679;
+}
+
+.WIPEntitee:hover .WIPButton {
+  background-color: #f6f679;
+  border: 0px solid #f8f89e;
+}

@@ -1,0 +1,63 @@
+.CompletedTaskDiv {
+  background-color: #8bdd8e;
+  height: calc(100vh - 136px);
+  /* box-shadow: 0 0 1px 1px rgb(10 40 55 / 8%), 0 4px 6px 1px rgb(10 40 55 / 10%); */
+  border-radius: 8px;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .CompletedTaskDiv {
+    height: inherit;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .CompletedTaskDiv {
+    height: inherit;
+  }
+}
+
+.completedNoTask {
+  text-align: center;
+  color: #342f2f;
+  margin: 10px;
+  margin: 10px;
+}
+
+.CompletedTaskTitle {
+  padding: 10px 10px;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  color: #342f2f;
+}
+
+.CompletedTaskEntitee {
+  background-color: #c0edc1;
+  margin: 5px 10px 10px 10px;
+  color: black;
+  font-size: 28px;
+  height: 40px;
+  box-shadow: 0 0 1px 1px rgb(10 40 55 / 8%), 0 4px 6px 1px rgb(10 40 55 / 10%);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.CompletedTaskEntitee:hover {
+  background-color: #dff6e0;
+}
+
+.CompletedTaskEntitee:hover .completedbuttontowip {
+  background-color: #dff6e0;
+  border: 0px solid #dff6e0;
+}
+
+.completedbuttontowip {
+  background-color: #c0edc1;
+  border: 0px solid #c0edc1;
+  font-size: 20px;
+  cursor: pointer;
+}

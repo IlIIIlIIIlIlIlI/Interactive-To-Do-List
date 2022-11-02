@@ -1,0 +1,65 @@
+.mainDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.addedTask {
+  display: flex;
+}
+
+.innerDiv {
+  display: flex;
+}
+
+.AddedTaskListList {
+  width: 33.33%;
+  background-color: #eb9e98;
+  box-shadow: 0 0 1px 1px rgb(10 40 55 / 8%), 0 4px 6px 1px rgb(10 40 55 / 10%);
+}
+
+.WIPTaskList {
+  width: 33.33%;
+  background-color: #e9dbb6;
+  box-shadow: 0 0 1px 1px rgb(10 40 55 / 8%), 0 4px 6px 1px rgb(10 40 55 / 10%);
+}
+
+.CompletedTaskList {
+  width: 33.33%;
+  background-color: #8bdd8e;
+  box-shadow: 0 0 1px 1px rgb(10 40 55 / 8%), 0 4px 6px 1px rgb(10 40 55 / 10%);
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .AddedTaskListList,
+  .WIPTaskList,
+  .CompletedTaskList {
+    width: 100%;
+  }
+
+  .addedTask {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .AddedTaskListList,
+  .WIPTaskList,
+  .CompletedTaskList {
+    width: 100%;
+  }
+
+  .addedTask {
+    display: block;
+  }
+}
+
+.columnWise {
+  display: flex;
+  flex-direction: column;
+}
+
+.colorAddedTaskList {
+  background-color: #eb9e98;
+  height: 100%;
+  flex: 1;
+}

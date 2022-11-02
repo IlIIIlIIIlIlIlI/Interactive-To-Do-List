@@ -1,0 +1,62 @@
+.AddedTaskList {
+  background-color: #eb9e98;
+  height: calc(100vh - 136px);
+  /* box-shadow: 0 0 1px 1px rgb(10 40 55 / 8%), 0 4px 6px 1px rgb(10 40 55 / 10%); */
+  border-radius: 8px;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .AddedTaskList {
+    height: inherit;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .AddedTaskList {
+    height: inherit;
+  }
+}
+
+.taskListAddeeEntitee {
+  padding: 5px 10px;
+}
+
+.taskListAddeeEntiteeDiv {
+  color: black;
+  font-size: 28px;
+  background-color: wheat;
+  height: 40px;
+  box-shadow: 0 0 1px 1px rgb(10 40 55 / 8%), 0 4px 6px 1px rgb(10 40 55 / 10%);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.taskListAddeeEntiteeDiv:hover {
+  background-color: #efc881;
+}
+
+.PendingTask {
+  padding: 10px 10px;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  color: #342f2f;
+}
+
+.taskListAddeeEntiteeText {
+  padding-left: 10px;
+}
+
+.taskListAddeeEntiteeButton {
+  background-color: wheat;
+  border: 0px solid wheat;
+  font-size: 20px;
+}
+
+.taskListAddeeEntiteeDiv:hover .taskListAddeeEntiteeButton {
+  background-color: #efc881;
+  border: 0px solid #efc881;
+  cursor: pointer;
+}
