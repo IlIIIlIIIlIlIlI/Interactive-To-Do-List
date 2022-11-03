@@ -7,7 +7,6 @@ import { selectTask } from "../Redux/Store/selector";
 function InputList() {
   const dispatch = useDispatch();
   const taskPresent = useSelector(selectTask);
-  console.log("taskPresent", taskPresent);
   const formik = useFormik({
     validate: (values) => {
       let errors = {};
@@ -39,7 +38,6 @@ function InputList() {
       task: "",
     },
     onSubmit: (values, formikProps) => {
-      //  console.log("abc", values.task.replace(/\s\s+/g, " ").trim());
       dispatch({
         type: "TASK_ADDED",
         payload: { task: values.task.replace(/\s\s+/g, " ").trim() },
