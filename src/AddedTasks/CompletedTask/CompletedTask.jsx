@@ -40,6 +40,9 @@ function CompletedTask() {
           </div>
         ))
       )}
+      <div className="WIPHeadDiv" style={{ visibility: "hidden" }}>
+        Task In Progress
+      </div>
     </div>
   );
 }

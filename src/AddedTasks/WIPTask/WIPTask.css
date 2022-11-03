@@ -1,19 +1,19 @@
 .WIPMainDiv {
   background-color: #e9dbb6;
-  height: calc(100vh - 136px);
+  min-height: calc(100vh - 136px);
   /* box-shadow: 0 0 1px 1px rgb(10 40 55 / 8%), 0 4px 6px 1px rgb(10 40 55 / 10%); */
   border-radius: 8px;
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
   .WIPMainDiv {
-    height: inherit;
+    min-height: calc((100vh - 136px) / 3);
   }
 }
 
 @media only screen and (max-width: 768px) {
   .WIPMainDiv {
-    height: inherit;
+    min-height: calc((100vh - 136px) / 3);
   }
 }
 
