@@ -58,6 +58,7 @@ function InputList() {
               name="task"
               autoComplete="off"
               spellcheck="off"
+              placeholder="Add Task"
               value={formik.values.task}
               onChange={formik.handleChange}
               onBlur={(event) => {

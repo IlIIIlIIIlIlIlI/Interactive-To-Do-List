@@ -1,10 +1,20 @@
 input {
-  /* min-width: 80%; */
+  width: 33.34vw;
   height: 50px;
   font-size: 40px;
   background-color: #ece5e5;
   margin-top: 10px;
   box-shadow: 0 0 1px 1px rgb(10 40 55 / 8%), 0 4px 6px 1px rgb(10 40 55 / 10%);
+}
+
+input::placeholder {
+  text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  input {
+    width: 80vw;
+  }
 }
 
 .inputDiv {
