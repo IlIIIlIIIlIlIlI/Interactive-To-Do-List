@@ -22,7 +22,9 @@ function InputList() {
         };
       if (
         taskPresent.find(
-          (task) => task.toUpperCase() === values.task.toUpperCase()
+          (task) =>
+            task.toUpperCase() ===
+            values.task.replace(/\s\s+/g, " ").trim().toUpperCase()
         )
       )
         errors = {
@@ -31,6 +33,7 @@ function InputList() {
       return errors;
     },
     validateOnMount: true,
+    validateOnChange: true,
     initialValues: {
       task: "",
     },
