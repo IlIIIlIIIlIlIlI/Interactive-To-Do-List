@@ -26,7 +26,17 @@ function CompletedTask() {
               🡨
             </button>
             {task}
-            <span></span>
+            <button
+              className="completedbuttontowip"
+              onClick={() => {
+                dispatch({
+                  type: "DELETE_TASK",
+                  payload: { task: task, index: index },
+                });
+              }}
+            >
+              🗑️
+            </button>
           </div>
         ))
       )}
