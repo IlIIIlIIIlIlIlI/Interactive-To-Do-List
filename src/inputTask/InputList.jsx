@@ -56,6 +56,8 @@ function InputList() {
           <div className="inputPosition">
             <input
               name="task"
+              autoComplete="off"
+              spellcheck="off"
               value={formik.values.task}
               onChange={formik.handleChange}
               onBlur={(event) => {
