@@ -28,7 +28,7 @@ function WIPTask() {
                     })
                   }
                 >
-                  🡨
+                  &#10218;
                 </button>
 
                 <span>{task}</span>
@@ -45,7 +45,7 @@ function WIPTask() {
                     })
                   }
                 >
-                  🡪
+                  &#10219;
                 </button>
               </div>
             </div>

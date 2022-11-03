@@ -40,7 +40,7 @@ function AddedTaskList() {
                       });
                     }}
                   >
-                    🡪
+                    &#10219;
                   </button>
                 </div>
               </div>

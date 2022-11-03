@@ -23,7 +23,7 @@ function CompletedTask() {
                 });
               }}
             >
-              🡨
+              &#10218;
             </button>
             {task}
             <button
