@@ -59,6 +59,15 @@ export const reducer = (state = initialState, action) => {
       sessionStorage.setItem("redux", JSON.stringify(redux));
       return redux;
     }
+    case "DELETE_TASK_FROM_ADDED_TASK": {
+      const indexAt = state.task.indexOf(action.payload.task);
+      const redux = produce(state, (draft) => {
+        draft.addedTask.splice(action.payload.index, 1);
+        draft.task.splice(indexAt, 1);
+      });
+      sessionStorage.setItem("redux", JSON.stringify(redux));
+      return redux;
+    }
     default:
       return state;
   }

@@ -13,11 +13,21 @@ function AddedTaskList() {
         {!addedTask.length ? (
           <div className="completedNoTask">No task availeble</div>
         ) : (
-          addedTask.map((task) => {
+          addedTask.map((task, index) => {
             return (
               <div className="taskListAddeeEntitee" key={task}>
                 <div className="taskListAddeeEntiteeDiv">
-                  <div style={{ visibility: "hidden" }}>""</div>
+                  <button
+                    className="taskListAddeeEntiteeButton"
+                    onClick={() => {
+                      dispatch({
+                        type: "DELETE_TASK_FROM_ADDED_TASK",
+                        payload: { task: task, index: index },
+                      });
+                    }}
+                  >
+                    🗑️
+                  </button>
                   <div className="taskListAddeeEntiteeText">{task}</div>
                   <button
                     className="taskListAddeeEntiteeButton"
